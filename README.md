@@ -20,7 +20,7 @@ SQL Server: The relational database used to store customer information.
 DML (Data Manipulation Language): A set of SQL commands, such as INSERT, SELECT, UPDATE, and DELETE, for manipulating data in the table.
 
 ## Objective:
-The project aims to teach and exemplify the basic functioning of CRUD operations in a relational database environment, using a customer table as a case study. Through it, it is expected that users understand how to insert, query, update, and delete records efficiently and practically.
+The project aims to exemplify the basic functioning of CRUD operations in a relational database environment, using a customer table as a case study. Through it, it is expected understand how to insert, query, update, and delete records efficiently and practically.
 
 
 
