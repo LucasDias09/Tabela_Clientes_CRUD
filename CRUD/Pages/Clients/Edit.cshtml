@@ -1,0 +1,54 @@
+﻿@page
+@model CRUD.Pages.Clients.EditModel
+@{
+}
+<br />
+<h1>Edit Client</h1>
+
+@if (Model.erroMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.erroMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form method="POST">
+    <input type="hidden" name="id" value="@Model.clientInfo.id" />
+    <div class="form-group">
+        <label for="exampleInputName">Name</label>
+        <input type="text" class="form-control" name="name" aria-describedby="Name" placeholder="Name" value="@Model.clientInfo.name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value="@Model.clientInfo.email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="text" class="form-control" aria-describedby="PhoneNumber" placeholder="Enter your number" name="phone" value="@Model.clientInfo.phone">
+    </div>
+    <div class="form-group">
+        <label>Address</label>
+        <input type="text" class="form-control" aria-describedby="Address" placeholder="Enter your address" name="address" value="@Model.clientInfo.address">
+    </div>
+
+    @if (Model.successmessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successmessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+</form>
