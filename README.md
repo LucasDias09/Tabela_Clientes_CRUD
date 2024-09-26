@@ -12,6 +12,7 @@ Read (Data reading): The reading operation will be implemented using the SELECT 
 Update (Data update): The update operation will be demonstrated using the UPDATE command, where one or more fields of a specific record can be changed, such as updating a customer's address or phone number.
 
 Delete (Data deletion): The delete operation will be performed using the DELETE command, to remove a specific record from the customer table, either by ID or other unique identifier.
+![image](https://github.com/user-attachments/assets/fd041e9c-fa11-4aa4-b1eb-6adcdfd528ef)
 
 ## Technologies used:
 
